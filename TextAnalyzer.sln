@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextAnalyzer.Shell", "TextAnalyzer.Shell\TextAnalyzer.Shell.csproj", "{9A8D4AD3-C32A-4008-850C-F738DF7E994E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextAnalyzer.Services", "TextAnalyzer.Services\TextAnalyzer.Services.csproj", "{B813B761-A4D8-4135-9FC3-15F32951D203}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextAnalyzer.PerformanceBenchmark", "TextAnalyzer.PerformanceBenchmark\TextAnalyzer.PerformanceBenchmark.csproj", "{E28F2DE0-0F41-42C5-A3C9-DE171D042C90}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextAnalyzer.TestApp", "TextAnalyzer.TestApp\TextAnalyzer.TestApp.csproj", "{64B9B231-5829-4B78-8BC5-4014FAD6CF08}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9A8D4AD3-C32A-4008-850C-F738DF7E994E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A8D4AD3-C32A-4008-850C-F738DF7E994E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A8D4AD3-C32A-4008-850C-F738DF7E994E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A8D4AD3-C32A-4008-850C-F738DF7E994E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B813B761-A4D8-4135-9FC3-15F32951D203}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B813B761-A4D8-4135-9FC3-15F32951D203}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B813B761-A4D8-4135-9FC3-15F32951D203}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B813B761-A4D8-4135-9FC3-15F32951D203}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E28F2DE0-0F41-42C5-A3C9-DE171D042C90}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E28F2DE0-0F41-42C5-A3C9-DE171D042C90}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E28F2DE0-0F41-42C5-A3C9-DE171D042C90}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E28F2DE0-0F41-42C5-A3C9-DE171D042C90}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64B9B231-5829-4B78-8BC5-4014FAD6CF08}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64B9B231-5829-4B78-8BC5-4014FAD6CF08}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64B9B231-5829-4B78-8BC5-4014FAD6CF08}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64B9B231-5829-4B78-8BC5-4014FAD6CF08}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
