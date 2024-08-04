@@ -8,7 +8,8 @@ public class WordsCountBenchmark
 {
     private WordUsageAnalyzerByLines _analyzerByLines;
     private WordUsageAnalyzerByChunks _analyzerByChunks;
-    
+    private WordUsageAnalyzerByFiles _analyzerByFiles;
+
     public WordsCountBenchmark()
     {
         var settings = new WordUsageAnalyzerSettings
@@ -21,6 +22,7 @@ public class WordsCountBenchmark
 
         _analyzerByLines = new WordUsageAnalyzerByLines(settings);
         _analyzerByChunks = new WordUsageAnalyzerByChunks(settings);
+        _analyzerByFiles = new WordUsageAnalyzerByFiles(settings);
     }
 
     [Benchmark]
@@ -28,4 +30,7 @@ public class WordsCountBenchmark
 
     [Benchmark]
     public List<WordsCountResult> BufferWordsCount() => _analyzerByChunks.AnalyzeFiles();
+
+    [Benchmark]
+    public List<WordsCountResult> FilesWordsCount() => _analyzerByFiles.AnalyzeFiles();
 }

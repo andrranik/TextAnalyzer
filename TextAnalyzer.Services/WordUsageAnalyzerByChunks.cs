@@ -4,6 +4,11 @@ namespace TextAnalyzer.Services;
 
 public sealed class WordUsageAnalyzerByChunks(WordUsageAnalyzerSettings settings) : WordUsageAnalyzer(settings)
 {
+    private static char[] _delimiters =
+    [
+        ' ', ',', '.', '!', '?', ';', ':', '-', '_', '(', ')', '[', ']', '{', '}', '\'', '\"', '\n', '\r', '\t'
+    ];
+    
     public override List<WordsCountResult> AnalyzeFiles()
     {
         Parallel.ForEach(GetChunks(), CountWordsInText);
@@ -37,7 +42,7 @@ public sealed class WordUsageAnalyzerByChunks(WordUsageAnalyzerSettings settings
     private static int FindLastDelimiter(IReadOnlyList<char> buffer, int length)
     {
         for (var i = length - 1; i >= 0; i--)
-            if (Array.Exists(Delimiters, delimiter => delimiter == buffer[i]))
+            if (Array.Exists(_delimiters, delimiter => delimiter == buffer[i]))
                 return i;
 
         return length - 1; // Если разделитель не найден, вернуть последний индекс буфера

@@ -14,6 +14,7 @@ WordUsageAnalyzer analyzer = ConfigurationHelper.GetMode() switch
 {
     "Chunks" => new WordUsageAnalyzerByChunks(settings),
     "Lines" => new WordUsageAnalyzerByLines(settings),
+    "Files" => new WordUsageAnalyzerByFiles(settings),
     _ => throw new ArgumentOutOfRangeException("Mode name are incorrect")
 };
 
