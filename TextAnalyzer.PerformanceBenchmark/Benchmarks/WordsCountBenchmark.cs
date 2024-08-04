@@ -14,7 +14,7 @@ public class WordsCountBenchmark
     {
         var settings = new WordUsageAnalyzerSettings
         {
-            DirectoryPath = "<Path To Directory With Files>",
+            DirectoryPath = "/Users/andranikaleksanan/src/TextAnalyzer/TextAnalyzer.Shell/Files",
             MinWordLength = 4,
             FileSearchPattern = "*.txt",
             ResultItemsCount = 10
